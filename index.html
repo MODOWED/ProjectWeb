@@ -19,39 +19,165 @@
               color: white;
            
             }
+            
+            .required{
+                font-weight: bold;
+                color: red;
+            }
+            label{
+                float: left;
+                width: 112px;
+                padding-right: 10px;
+                text-align: right;
+            }
+
+            input{
+                margin-left: 1em;
+                margin-bottom: .5em;
+                width: 300px;
+            }
+
+            input[type="checkbox"]{width: 15px;}
+            input[type="radio"]{width: 10px;}
+
+            #button, #reset{
+            margin-top: .5em;
+            width: 8em;
+            background-color: orange;
+            border: 2px solid black; 
+            }
           
           </style>
     </head>
+    <header>
+
+        <img style="float:left;margin-right:10px;" src="Images/Logo.png" alt="Logo" width="110">
+        <h1 style="margin-top: 20px;color: black ;">Places to visit in Ireland</h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li class="active"> <a href="index.html">Home</a></li>
+            <li> <a href="connaught.html">Connought</a></li>
+            <li> <a href="Munster.html">Munster</a></li>
+            <li> <a href="Leinster.html">Leinster</a></li>
+        </ul>
+    </nav>
     <body>
-                <header>
 
-                    <img style="float:left;margin-right:10px;" src="Images/Logo.png" alt="Logo" width="110">
-                    <h1 style="margin-top: 20px;color: black ;">Places to visit in Ireland</h1>
-    
-                </header>
-                <nav>
+
+
+
+            <main id="mainText">   
+                <h1>About us!</h1>
+                <p>
+                    We are a small travel agency that is located in Sligo Ireland. We are dedicated in helping you find your way to all the amazing sights to behold in Ireland.
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                     enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                       qui officia deserunt mollit anim id est laborum.
+                </p>    
+
+                <h1>The people who will help you on your way are: </h1>
+
+                <section id="Bossman" class="autoSect">
+                    <img  src="Images/t1.jpg"alt="Employee 1" width="20%">
+                    <h2>Manager</h2>
                     <ul>
-                        <li class="active"> <a href="index.html">Home</a></li>
-                        <li> <a href="connaught.html">Connought</a></li>
-                        <li> <a href="Munster.html">Munster</a></li>
-                        <li> <a href="Leinster.html">Leinster</a></li>
+                        <li>Shes the Manager</li>
+                        <li>Is able to manage things</li>
+                        <li>has no other reason for being here</li>
                     </ul>
-                </nav>
+                </section>
+                
+                <section id="Bossman" class="autoSect">
+                    <img  src="Images/BigBOi.jpg" alt="Bossman" width="13%">
+                    <h1>The Big Boss</h1>
+                    <ul>
+                        <li>Absolut unit</li>
+                        <li>hes Got a great smile</li>
+                        <li>Is a GOD OF TRAVEL</li>
+                        <li>Example text</li>
+                        <li>Example text</li>
+                        <li>Example text</li>
+                        <li>Example text</li>
+                    </ul>
+
+                </section>
 
 
+                <section id="Bossman" class="autoSect">
+                    <img  src="Images/worker.jpg" alt="worker" width="20%">
+                    <h1>The worker</h1>
+                    <ul>
+                        <li>Will find you a house</li>
+                        <li>Can show you around the place</li>
+                        <li>Example text</li>
+                        <li>Example text</li>
+                        <li>Example text</li>
+                        <li>Example text</li>
+                    </ul>
 
-            <main id="mainText">       
+                </section>
+
+                <article style="float:left; margin-right: 50px;">
+                    <h1>Where we are located</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.227506539094!2d-10.658731233935999!3d52.0755882297324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x484fdceb57a2efaf%3A0x272e5980521595a8!2sTearaght%20Island!5e0!3m2!1sen!2sie!4v1650829813262!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>123 <br> Connought Road <br>Ireland</p>
+                </article>
+                    <section>
+                        <h3>
+                            Plese enter the following information: 
+                            <form action="http:/foo.com" method="put">
+                            <label for="first_name">First name:<span class="required">*</span></label>
+                            <input type="text" name="first_name" id="first_name" autofocus required><br>
+    
+                            <label for="last_name">Last name:<span class="required">*</span></label>
+                            <input type="text" name="last_name" id="last_name" required><br>
+    
+                            <label for="email">Email:<span class="required">*</span></label>
+                            <input type="email" name="email" id="email" required placeholder="johndoe@example.com"><br>
+                            
+                            <label for="gender">Gender:</label>
+                            <input type="radio" name="gender" id="gender" value="male">Single
+                            <input type="radio" name="gender" id="gender" value="female">Family
+                            <input type="radio" name="gender" id="gender" value="other" checked>More<br>
+                            <label for="internet">Heard of us:</label>
+                            <fieldset>
+                                <input type="checkbox" id="internet" name="internet" value="internet" checked> internet <br>
+                                <input type="checkbox" class="margin1" id="hear" name="paper" value="paper"> Newspaper<br>
+                                <input type="checkbox" class="margin1" id="hear" name="freind" value="freind"> Freind<br>
+                                <input type="checkbox" class="margin1" id="hear" name="Add" value="Add"> Others<br>
+                            </fieldset><br>
+                            <label for="message">Query  :   </label>
+                            <textarea cols="50" rows="6" id="message" name="message" placeholder="Your message must be less then 200 characters" data-maxlength="200"></textarea><br>
+                            <input type="submit" name="submit" id="button">
+                            <input type="reset" name="reset" id="reset">
+                            </form>
+                            <p style="margin-left: 138px;"><span class="required" >*</span><em>Indicates a required field</em></p>
+    
+    
+    
+                        </h3>
+                    </section>
+                
+
             </main>
-            <footer>
-                <ul>
-                    <li class="active"> <a href="index.html">Home</a></li>
-                    <li> <a href="connaught.html">Connought</a></li>
-                    <li> <a href="Munster.html">Munster</a></li>
-                    <li> <a href="Leinster.html">Leinster</a></li>
-                </ul>
-                <p>&copy;Copyright &#64; Matthew O'Dowd 2022</p>
-            </footer>
+
+
     </body>
+    <footer>
+        <ul>
+            <li class="active"> <a href="index.html">Home</a></li>
+            <li> <a href="connaught.html">Connought</a></li>
+            <li> <a href="Munster.html">Munster</a></li>
+            <li> <a href="Leinster.html">Leinster</a></li>
+        </ul>
+        <p>&copy;Copyright &#64; 2022</p>
+    </footer>
  
 
 
