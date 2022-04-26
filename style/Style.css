@@ -1,6 +1,7 @@
 p {
   text-align: justify;
   padding: 2px;
+  width: 60%;
 }
 main{
   width: 100%;
@@ -112,6 +113,32 @@ footer ul li a{
 
 #Bossman ul li{
 float: center;
+}
+.required{
+  font-weight: bold;
+  color: red;
+}
+label{
+  float: left;
+  width: 112px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+input{
+  margin-left: 1em;
+  margin-bottom: .5em;
+  width: 300px;
+}
+
+input[type="checkbox"]{width: 15px;}
+input[type="radio"]{width: 10px;}
+
+#button, #reset{
+margin-top: .5em;
+width: 8em;
+background-color: orange;
+border: 2px solid black; 
 }
 
 
